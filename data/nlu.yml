@@ -1,0 +1,233 @@
+version: "3.1"
+
+nlu:
+  - intent: greet
+    examples: |
+      - hey
+      - hello
+      - hi
+      - hello there
+      - good morning
+      - good evening
+      - moin
+      - hey there
+      - let's go
+      - hey dude
+      - good morning
+      - good evening
+      - good afternoon
+
+  - intent: affirm
+    examples: |
+      - yes
+      - y
+      - indeed
+      - of course
+      - that sounds good
+      - correct
+
+  - intent: ok
+    examples: |
+      - k
+      - ok
+      - okay
+      - okz
+      - okki
+
+  - intent: deny
+    examples: |
+      - no
+      - n
+      - never
+      - I don't think so
+      - don't like that
+      - no way
+      - not really
+
+  - intent: goodbye
+    examples: |
+      - cu
+      - good by
+      - cee you later
+      - good night
+      - bye
+      - goodbye
+      - have a nice day
+      - see you around
+      - bye bye
+      - see you later
+
+  - intent: look
+    examples: |
+      - look at [tree](object)
+      - i want to look at the [tree](object)
+      - check the [tree](object)
+      - peek at [tree](object)
+      - watch the [tree](object)
+      - glance at the [tree](object)
+      - look at the  [forest](object)
+      - look around
+      - look into the [forest](object)
+      - look at [forest](object)
+      - Can I look at the [forest](object)?
+      - inspect the [forest](object)
+      - look around the [forest](object)
+      - look at the [cave](object)
+      - look at the [cave](object)
+      - walk to the [cave](object)
+      - go to the [cave](object)
+      - look at the [cave](object)
+      - look at the [door](object)
+      - look around the [burrow](object)
+      - look at the [burrow](object)
+      - look at the [burrow](object)
+      - walk to the [burrow](object)
+      - go to the [burrow](object)
+      - look at the [burrow](object)
+      - look at the [burrow](object)
+      - look at [rock](object)
+      - i want to look at the [rock](object)
+      - check the [rock](object)
+      - peek at [rock](object)
+      - watch the [rock](object)
+      - glance at the [rock](object)
+      - look into the [chockstone](object)
+      - look at [chockstone](object)
+      - Can I look at the [chockstone](object)?
+      - inspect the [chockstone](object)
+      - look around the [chockstone](object)
+      - look at the [chockstone](object)
+      - look at [mountain](object)
+      - i want to look at the [mountain](object)
+      - check the [mountain](object)
+      - peek at [mountain](object)
+      - watch the [mountain](object)
+      - glance at the [mountain](object)
+      - look at [river](object)
+      - i want to look at the [river](object)
+      - check the [river](object)
+      - peek at [river](object)
+      - watch the [river](object)
+      - glance at the [river](object)
+      - look at [bridge](object)
+      - i want to look at the [bridge](object)
+      - check the [bridge](object)
+      - peek at [bridge](object)
+      - watch the [bridge](object)
+      - glance at the [bridge](object)
+      - i want to look at the [sand](object)
+      - check the [sand](object)
+      - peek at [sand](object)
+      - watch the [sand](object)
+      - glance at the [sand](object)
+      - look at [sand](object)
+      - look at [shell](object)
+      - i want to look at the [shell](object)
+      - check the [shell](object)
+      - peek at [shell](object)
+      - watch the [shell](object)
+      - glance at the [shell](object)
+
+  - intent: pickup
+    examples: |
+      - pick up the [key](object)
+      - pick the [key](object)
+      - collect up the [key](object)
+      - take up the [key](object)
+      - snag the [key](object)
+      - grab the [key](object)
+      - seize the [key](object)
+      - pick up the [torch](object)
+      - pick the [torch](object)
+      - collect up the [torch](object)
+      - take up the [torch](object)
+      - snag the [torch](object)
+      - grab the [torch](object)
+      - seize the [torch](object)
+      - pick up the [rope](object)
+      - pick the [rope](object)
+      - collect up the [rope](object)
+      - take up the [rope](object)
+      - snag the [rope](object)
+      - grab the [rope](object)
+      - seize the [rope](object)
+      - pick up the [sword](object)
+      - pick the [sword](object)
+      - collect up the [sword](object)
+      - take up the [sword](object)
+      - snag the [sword](object)
+      - grab the [sword](object)
+      - seize the [sword](object)
+
+  - intent: inventory
+    examples: |
+      - show inventory
+      - what is in my inventory
+      - what items do i currently have
+      - what have i picked up sofar
+      - check inventory
+      - check my inventory
+      - look at the inventory
+      - Where do I find my inventory?
+      - show me inventory
+
+  - intent: question_answer
+    examples: |
+      - shadow
+      - Breathe
+      - Name
+      - Reflection
+      - Fish
+      - Desert
+      - Asteroid
+      - Star
+      - Pearl
+      - Dewdrop
+      - Foam
+      - Waves
+
+  - intent: help
+    examples: |
+      - help
+      - how does this game work
+      - what commands can i use
+      - how does this work?
+      - please help me
+      - i do not understand this
+      - what can i do?
+      - where am i
+      - I found the cardboard [box](object), can I open it?
+      - how do I find the [door](object)?
+
+  - intent: hint
+    examples: |
+      - can i get a hint?
+      - hint please
+      - I'm stuck
+      - give me a hint
+
+  - intent: bot_challenge
+    examples: |
+      - are you a bot?
+      - are you a human?
+      - am I talking to a bot?
+      - am I talking to a human?
+
+  - lookup: object
+    examples: |
+      - tree
+      - forest
+      - cave
+      - burrow
+      - rock
+      - chockstone
+      - shadow
+      - mountain
+      - river
+      - bridge
+      - sand
+      - shell
+      - key
+      - torch
+      - rope
+      - sword

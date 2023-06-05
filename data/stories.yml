@@ -2,6 +2,45 @@ version: "3.1"
 
 stories:
 
+- story: All Level
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: affirm
+  - action: utter_game_intro
+  - intent: affirm
+  - action: utter_level_1
+  - intent: look
+  - action: action_look
+  - intent: question_answer
+  - action: action_check_answer
+  - intent: pickup
+  - action: action_pickup
+  - slot_was_set:
+      - torch: true
+  - intent: use
+  - action: action_use
+  - intent: look
+  - action: action_look
+  - intent: question_answer
+  - action: action_check_answer
+  - intent: pickup
+  - action: action_pickup
+  - slot_was_set:
+      - rope: true
+  - intent: use
+  - action: action_use
+  - intent: look
+  - action: action_look
+  - intent: question_answer
+  - action: action_check_answer
+  - intent: pickup
+  - action: action_pickup
+  - slot_was_set:
+      - key: true
+  - intent: use
+  - action: action_use
+
 - story: Level 1
   steps:
   - intent: greet
@@ -12,44 +51,40 @@ stories:
   - action: utter_level_1
   - intent: look
   - action: action_look
-  - intent: question_answers
+  - intent: question_answer
   - action: action_check_answer
   - intent: pickup
   - action: action_pickup
   - slot_was_set:
       - torch: true
-  - intent: inventory
-  - action: action_inventory
+  - intent: use
+  - action: action_use
 
 - story: Level 2
   steps:
-  - intent: affirm
-  - action: utter_level_2
   - intent: look
   - action: action_look
-  - intent: question_answers
+  - intent: question_answer
   - action: action_check_answer
   - intent: pickup
   - action: action_pickup
   - slot_was_set:
       - rope: true
-  - intent: inventory
-  - action: action_inventory
+  - intent: use
+  - action: action_use
 
 - story: Level 3
   steps:
-  - intent: affirm
-  - action: utter_level_3
   - intent: look
   - action: action_look
-  - intent: question_answers
+  - intent: question_answer
   - action: action_check_answer
   - intent: pickup
   - action: action_pickup
   - slot_was_set:
       - key: true
-  - intent: inventory
-  - action: action_inventory
+  - intent: use
+  - action: action_use
 
 - story: quit path
   steps:

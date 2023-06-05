@@ -27,3 +27,8 @@ rules:
   - action: utter_help
   - intent: help
   - action: utter_hint
+
+- rule: ask for inventory
+  steps:
+  - intent: inventory
+  - action: action_inventory

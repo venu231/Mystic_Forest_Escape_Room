@@ -40,6 +40,27 @@ stories:
       - key: true
   - intent: use
   - action: action_use
+  - intent: look
+  - action: action_look
+  - intent: question_answer
+  - action: action_check_answer
+  - intent: pickup
+  - action: action_pickup
+  - slot_was_set:
+      - key: true
+  - intent: use
+  - action: action_use
+  - intent: look
+  - action: action_look
+  - intent: question_answer
+  - action: action_check_answer
+  - intent: pickup
+  - action: action_pickup
+  - slot_was_set:
+      - key: true
+  - intent: use
+  - action: action_use
+
 
 - story: Level 1
   steps:
@@ -60,6 +81,7 @@ stories:
   - intent: use
   - action: action_use
 
+
 - story: Level 2
   steps:
   - intent: look
@@ -73,7 +95,34 @@ stories:
   - intent: use
   - action: action_use
 
+
 - story: Level 3
+  steps:
+  - intent: look
+  - action: action_look
+  - intent: question_answer
+  - action: action_check_answer
+  - intent: pickup
+  - action: action_pickup
+  - slot_was_set:
+      - key: true
+  - intent: use
+  - action: action_use
+
+- story: Level 4
+  steps:
+  - intent: look
+  - action: action_look
+  - intent: question_answer
+  - action: action_check_answer
+  - intent: pickup
+  - action: action_pickup
+  - slot_was_set:
+      - key: true
+  - intent: use
+  - action: action_use
+
+- story: Level 5
   steps:
   - intent: look
   - action: action_look
@@ -92,4 +141,3 @@ stories:
   - action: utter_greet
   - intent: deny
   - action: utter_goodbye
-

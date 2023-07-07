@@ -4,5 +4,6 @@
     "background-image": "mystic-forest.jpg",
     "api-url": "http://localhost:5005",
     "welcome-message": "Hi.",
-    "escape_room_name"	: "Mystic Forest"
+    "escape_room_name"	: "Mystic Forest",
+    "chatbot_name": "ETHAN HUNT"
 }
